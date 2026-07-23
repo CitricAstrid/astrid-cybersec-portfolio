@@ -4,17 +4,19 @@ from getpass import getpass
 import tkinter as tk
 from tkinter import ttk
 
+#window intialization
 window = tk.Tk()
-
 label = tk.Label(text="Enter your password: ")
 label.pack()
 window.geometry("200x100")
 window.title("Password Strength Checker")
 
+#password entry
 password_entry = ttk.Entry(window, show="*")
 password_entry.pack(pady=5)
 password_entry.focus()
 
+#password check
 def check_password():
     if (len(password_entry.get()) >= 10 and len(password_entry.get()) <= 20
         and re.search("[a-z]", password_entry.get())
@@ -25,7 +27,7 @@ def check_password():
     else:
         label.config(text="This password is weak.")
 
-
+#button
 button = ttk.Button(window, text="Check Password", command=lambda: check_password())
 button.pack(pady=5)
 
