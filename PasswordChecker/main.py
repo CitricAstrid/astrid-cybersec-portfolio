@@ -1,9 +1,9 @@
 import string
 import re
-
+from getpass import getpass
 
 print("Enter a password for evaluation: ")
-password = input()
+password = getpass()
 
 
 if (len(password) >= 10
