@@ -1,8 +1,9 @@
 import string
 import re
 from getpass import getpass
+import tkinter as tk
 
-print("Enter a password for evaluation: ")
+tk.Tk()
 password = getpass()
 
 
