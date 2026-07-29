@@ -1,1 +1,1 @@
-This repo is a compliation of my cybersecurity projects. 
+This repo is a compilation of my cybersecurity projects. 
